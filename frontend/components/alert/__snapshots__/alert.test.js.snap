@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`alert should work should match 1`] = `
+<div
+  className="sc-beqWaB jAXxAP"
+>
+  This is a page preview.
+  <a
+    href="/api/exit-preview"
+  >
+    Click here
+  </a>
+  to exit preview mode.
+</div>
+`;

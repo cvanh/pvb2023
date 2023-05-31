@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`terminal should work should match the snapshot 1`] = `
+[
+  <div>
+    <p>
+      $ echo kaas
+    </p>
+    <p>
+      blah blah blah
+    </p>
+  </div>,
+  <p>
+    <input
+      type="text"
+    />
+  </p>,
+]
+`;
