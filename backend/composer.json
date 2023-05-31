@@ -26,10 +26,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:gohike/googleappslogin-premium-mirror"
-    },
-    {
-      "type": "vcs",
       "url": "git@bitbucket.org:gohike/gravityforms-mirror"
     },
     {
@@ -38,7 +34,7 @@
     },
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:gohike/wp-graphql-jwt-authentication"
+      "url": "git@github.com:wp-graphql/wp-graphql-jwt-authentication.git"
     }
   ],
   "require": {
@@ -66,9 +62,8 @@
     "wp-graphql/wp-graphql": "1.13.7",
     "wp-graphql/wp-graphql-acf": "0.6.1",
     "hike/advanced-custom-fields-pro": "6.0.3",
-    "hike/googleappslogin-premium": "3.4.2",
     "hike/gravityforms": "2.6.8.3",
-    "hike/wp-graphql-jwt-authentication": "0.6.0",
+    "wp-graphql/wp-graphql-jwt-authentication": "0.6.0",
     "ashhitch/wp-graphql-yoast-seo": "4.20.0",
     "koodimonni-language/core-nl_nl": "*",
     "valu/wp-graphql-offset-pagination": "0.2.0",
