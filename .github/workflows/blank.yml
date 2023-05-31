@@ -8,6 +8,8 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     name: Git Repo Sync
+    before_script: 
+      - git config --global http.sslverify false
     steps:
     - uses: actions/checkout@v2
       with:
