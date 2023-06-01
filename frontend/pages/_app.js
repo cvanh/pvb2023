@@ -1,7 +1,9 @@
+// apollo/graphql stuff
 import { ApolloProvider } from "@apollo/client";
-import "../styles/index.css";
 import client from "../lib/apolloclient/index";
 import { ThemeProvider } from "styled-components";
+
+// global styling 
 import theme from "../theme";
 import GlobalStyles from "../components/globalStyles";
 

@@ -37,7 +37,6 @@
     "jest": "^29.5.0",
     "lint-staged": "^13.2.1",
     "postcss": "8.4.14",
-    "tailwindcss": "^3.0.24"
   },
   "jest": {
     "testEnvironment": "jsdom",
