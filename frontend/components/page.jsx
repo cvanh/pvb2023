@@ -8,7 +8,7 @@ const Page = ({ children }) => {
       {/* <meta property="og:image" content={} /> */}
       {/* here goes shit like cookies headers and footers */}
       {children}
-      <Cookiebar />
+      {/* <Cookiebar /> */}
     </>
   );
 };

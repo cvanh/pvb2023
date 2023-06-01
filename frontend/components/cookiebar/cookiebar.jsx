@@ -19,19 +19,19 @@ export default function Cookiebar() {
   }
 
   // fetch wich cookies are agreed on. if user didnt already agreed we show the cookie bar
-  useEffect(() => {
-    const LocalCookie = localStorage.getItem("cookie");
-    if (LocalCookie && scripts) {
-      return (
-        <Script
-          id="cookie_pixel"
-          data-testid="cookie_pixel"
-          strategy="worker"
-          dangerouslySetInnerHTML={{ _html: scripts[LocalCookie] }}
-        />
-      );
-    }
-  });
+  // useEffect(() => {
+  //   const LocalCookie = localStorage.getItem("cookie");
+  //   if (LocalCookie && scripts) {
+  //     return (
+  //       <Script
+  //         id="cookie_pixel"
+  //         data-testid="cookie_pixel"
+  //         strategy="worker"
+  //         dangerouslySetInnerHTML={{ _html: scripts[LocalCookie] }}
+  //       />
+  //     );
+  //   }
+  // });
 
   return (
     <>
