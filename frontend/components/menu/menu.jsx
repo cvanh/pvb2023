@@ -1,4 +1,3 @@
-import React from "react";
 import Desktopmenu from "./desktopmenu";
 import Mobilemenu from "./mobilemenu";
 

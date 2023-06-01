@@ -3,7 +3,7 @@ const theme = {
     black: "#0f1214",
     white: "#cbeafb",
   },
-  fonts: ["Fira Code"],
+  fonts: ["Roboto"],
   fontSizes: {
     small: "1em",
     medium: "2em",
