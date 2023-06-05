@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../theme";
 
 export const SMenu = styled.div`
   background-color: white;
@@ -12,12 +13,34 @@ export const SMenu = styled.div`
     }
   }
   .menuLogo {
-    margin-left: 133px;
+    @media ${device.tablet} {
+      margin-left: 133px;
+    }
+    margin: none;
   }
+
   .menuItems {
-    display: flex;
     margin: auto;
   }
+
+  .desktopMenu {
+    @media ${device.mobileL} {
+      display: flex;
+    }
+    display: none;
+    margin: auto;
+  }
+
+  .mobileMenu {
+    @media ${device.mobileL} {
+      display: none;
+      background-color: hotpink;
+    }
+    display: block;
+    margin-right: 20px;
+  }
+
+  // this is for the nice colored bar beneath the menu
   .menuGradient {
     display: block;
     height: 21px;

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Cookiebar from "./cookiebar";
-import Menu from "./menu";
 import Header from "./header";
 
 const Page = ({ children }) => {

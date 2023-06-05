@@ -1,0 +1,9 @@
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g id="Rectangle" fill="none" stroke="#072329" stroke-miterlimit="10" stroke-width="1">
+        <rect width="48" height="48" rx="6" stroke="none" />
+        <rect x="0.5" y="0.5" width="47" height="47" rx="5.5" fill="none" />
+    </g>
+    <path id="Combined_Shape" data-name="Combined Shape"
+        d="M1,14a1,1,0,0,1,0-2H15a1,1,0,0,1,0,2ZM1,8A1,1,0,0,1,1,6H15a1,1,0,0,1,0,2ZM1,2A1,1,0,0,1,1,0H15a1,1,0,0,1,0,2Z"
+        transform="translate(16 17)" fill="#072329" stroke="#072329" stroke-width="1" />
+</svg>
