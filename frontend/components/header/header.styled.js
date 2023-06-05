@@ -12,6 +12,23 @@ export const SMenu = styled.div`
       column-gap: 100px;
     }
   }
+  .menuMobilePopover {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    background-color: white;
+    justify-content: center;
+    li {
+      /* background-color: saddlebrown; */
+      margin: auto;
+      display: flex;
+      width: 100%;
+    }
+  }
   .menuLogo {
     @media ${device.tablet} {
       margin-left: 133px;
@@ -26,9 +43,9 @@ export const SMenu = styled.div`
   .desktopMenu {
     @media ${device.mobileL} {
       display: flex;
+      margin: auto;
     }
     display: none;
-    margin: auto;
   }
 
   .mobileMenu {
