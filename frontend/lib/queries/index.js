@@ -150,7 +150,7 @@ export const getScripts = gql`
 `;
 
 export const GetMenu = gql`
-  query getMenu($location: MenuLocationEnum = HEADER_MENU) {
+  query getMenu($location: MenuLocationEnum) {
     menuItems(where: { location: $location }) {
       nodes {
         id

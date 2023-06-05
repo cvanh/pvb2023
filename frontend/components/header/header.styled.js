@@ -23,7 +23,6 @@ export const SMenu = styled.div`
     background-color: white;
     justify-content: center;
     li {
-      /* background-color: saddlebrown; */
       margin: auto;
       display: flex;
       width: 100%;

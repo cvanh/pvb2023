@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function header() {
   const [OpenMobileMenu, setOpenMobileMenu] = useState(false);
   const { data: { menuItems: { nodes: data } = {} } = {} } = useQuery(GetMenu, {
-    location: "HEADER_MENU",
+    variables: { location: "HEADER_MENU" },
   });
   return (
     <SMenu>
