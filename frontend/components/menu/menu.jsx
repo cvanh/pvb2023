@@ -1,11 +1,11 @@
 import Desktopmenu from "./desktopmenu";
 import Mobilemenu from "./mobilemenu";
 
-export default function menu() {
+export default function Menu({ data }) {
   return (
     <div>
-      <Desktopmenu />
-      <Mobilemenu />
+      <Desktopmenu data={data} />
+      <Mobilemenu data={data} />
     </div>
   );
 }

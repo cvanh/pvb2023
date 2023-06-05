@@ -148,3 +148,16 @@ export const getScripts = gql`
     }
   }
 `;
+
+export const GetMenu = gql`
+  query getMenu($location: MenuLocationEnum = HEADER_MENU) {
+    menuItems(where: { location: $location }) {
+      nodes {
+        id
+        parentId
+        title: label
+        uri
+      }
+    }
+  }
+`;
