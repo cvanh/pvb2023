@@ -12,10 +12,6 @@ export const SHero = styled.div`
     position: absolute;
     border-radius: 100%;
   }
-  .courses {
-    background-color: red;
-    display: inline-grid;
-  }
 `;
 
 export const SImageBackground = styled.div`
