@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import theme from "../../theme";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -14,13 +15,24 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
   font-family: "Roboto";
 }
+
+h1 {
+  font-size: 4.5em;
+}
+h2 { 
+  font-size: 3.5em;
+}
+h3 { 
+  font-size: 2.5em;
+}
+h4{
+  font-size: 1.5em;
+}
+
 a{
   color: inherit;
   text-decoration: none;
 }
- h1,h2,h3,h4,h5,h6 {
-   font-family: Roboto;
- }
  button {
    margin: 2px;
    display: inline-block;
@@ -31,10 +43,10 @@ a{
    line-height: 20px;
    height: 30px;
    max-height: 30px;
-   background: black;
+   background: ${theme.colors.red};
    font-weight: 700;
-   border: 1px solid white;
-   border-radius: 0;
+   border-radius: 4px;
+   border: none;
    color: #FFFFFF;
    transition-timing-function: ease-in-out;
    transition-property: box-shadow;
@@ -42,10 +54,7 @@ a{
    :hover {
       box-shadow: 0 2px 2px rgb(39 44 52 / 12%);
    }
-                
  }
- 
-
 `;
 
 export default GlobalStyles;

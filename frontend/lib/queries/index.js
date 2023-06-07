@@ -170,3 +170,26 @@ export const GetMenu = gql`
     }
   }
 `;
+
+export const getCourses = gql`
+  query getcourses($first: Int) {
+    courses(first: $first) {
+      nodes {
+        uri
+        title
+        author {
+          node {
+            name
+          }
+        }
+        featuredImage {
+          node {
+            sourceUrl
+            srcSet
+            altText
+          }
+        }
+      }
+    }
+  }
+`;

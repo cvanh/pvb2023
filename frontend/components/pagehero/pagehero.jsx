@@ -1,25 +1,29 @@
 import React from "react";
-import { Container } from "./pagehero.styled";
 import Image from "next/image";
+import Container from "../container/container";
+import { SHero, SImageBackground } from "./pagehero.styled";
 
 export default function Pagehero({ data }) {
-  console.log(data);
   return (
     <Container>
-      <div className="box">
-        <h4>{data?.title}</h4>
-        <div>{data?.subtitle}</div>
-        <button>{data?.cta?.title}</button>
-      </div>
-      <div className="box">
-        <Image
-          height={100}
-          width={100}
-          alt=""
-          src={data?.heroimage?.sourceUrl}
-          srcset={data?.heroimage?.srcsSet}
-        />
-      </div>
+      <SHero>
+        <div className="box heroText">
+          <h1 dangerouslySetInnerHTML={{ __html: data?.title }} />
+          <div dangerouslySetInnerHTML={{ __html: data?.subtitle }} />
+          <button>{data?.cta?.title}</button>
+        </div>
+        <div className="box">
+          <Image
+            height={600}
+            width={600}
+            className="heroImage"
+            alt=""
+            src={data?.heroimage?.sourceUrl}
+            srcSet={data?.heroimage?.srcsSet}
+          />
+          <SImageBackground bg={data?.herocolor} />
+        </div>
+      </SHero>
     </Container>
   );
 }

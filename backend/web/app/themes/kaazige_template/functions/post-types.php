@@ -29,9 +29,9 @@ function cursus_post_type()
         'show_in_rest' => true,
         'hierarchical' => false,
         'show_in_graphql' => true,
-        'graphql_single_name' => 'Article',
-        'graphql_plural_name' => 'Articles',
-        'supports' => array('title', 'editor', 'thumbnail', 'author', 'revisions'),
+        'graphql_single_name' => 'course',
+        'graphql_plural_name' => 'courses',
+        'supports' => array('title', 'post-tumbnail', 'editor', 'thumbnail', 'author', 'revisions'),
     );
 
     register_post_type('article', $args);
@@ -44,3 +44,6 @@ function post_remove()
 }
 
 add_action('admin_menu', 'post_remove');
+
+// add thumbnails to posts
+add_theme_support('post-thumbnails');
