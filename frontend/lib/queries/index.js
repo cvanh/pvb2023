@@ -124,15 +124,24 @@ export const FlexContent = (type) => {
 };
 
 export const getHomePage = gql`
-  query getHomePage {
-    posts(last: 10) {
-      nodes {
-        title
-      }
-    }
-    pages(last: 10) {
-      nodes {
-        title
+  query frontpage {
+    nodeByUri(uri: "/") {
+      ... on Page {
+        hero {
+          title
+          subtitle
+          heroimage {
+            altText
+            srcSet
+            sourceUrl
+          }
+          herocolor
+          cta {
+            url
+            title
+            target
+          }
+        }
       }
     }
   }
