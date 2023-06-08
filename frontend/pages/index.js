@@ -16,11 +16,11 @@ export default function Index() {
   });
 
   if (loading) {
-    return <center>loading.....</center>;
+    // return <center>loading.....</center>;
   }
 
   if (error) {
-    return <center>error</center>;
+    // return <center>error</center>;
   }
 
   switch (page?.nodeByUri?.template?.templateName) {

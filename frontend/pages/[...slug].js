@@ -13,12 +13,12 @@ export default function Index() {
   });
 
   if (loading) {
-    return <center>loading.....</center>;
+    // return <center>loading.....</center>;
   }
 
   if (error || !data) {
     console.log(error);
-    return <center>error while fetching page</center>;
+    // return <center>error while fetching page</center>;
   }
 
   switch (data?.nodeByUri?.template?.templateName) {

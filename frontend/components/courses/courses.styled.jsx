@@ -2,11 +2,11 @@ import styled from "styled-components";
 import theme from "../../theme";
 
 export const SCourse = styled.div`
-  display: inline-grid;
-  gap: 20px;
+  display: inline-block;
   background-image: url(${(props) => props?.bgImage});
   height: 576px;
   width: 433px;
+  position: relative;
   padding: 10px;
 
   .cardTitle {
@@ -22,6 +22,11 @@ export const SCourse = styled.div`
     padding: 10px;
     text-align: center;
     border-radius: 20px;
+  }
+  .cardInfo {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
   }
 `;
 
