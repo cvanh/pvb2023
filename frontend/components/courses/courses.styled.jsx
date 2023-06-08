@@ -9,6 +9,9 @@ export const SCourse = styled.div`
   position: relative;
   padding: 10px;
 
+  @media ${screen.tablet} {
+  }
+
   .cardTitle {
     color: ${theme.colors.white};
     height: auto;
