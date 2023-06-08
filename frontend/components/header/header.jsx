@@ -14,7 +14,13 @@ export default function header() {
     <SMenu>
       <div className="menu">
         {/* desktop menu */}
-        <Image className="menuLogo" src="/logo.svg" width={74} height={74} />
+        <Image
+          alt="logo"
+          className="menuLogo"
+          src="/logo.svg"
+          width={74}
+          height={74}
+        />
         <ul className="menuItems desktopMenu">
           {data?.length > 0 &&
             data.map((menu) => (
@@ -26,6 +32,7 @@ export default function header() {
         {/* mobile menu */}
         <Image
           className="menuItems mobileMenu"
+          alt=""
           src="/mobilemenu.svg"
           // onClick={() => {
           //   setOpenMobileMenu(!OpenMobileMenu);

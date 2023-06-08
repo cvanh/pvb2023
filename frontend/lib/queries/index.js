@@ -77,18 +77,24 @@ fragment pagedata on Page {
 }
 `;
 
-export const postData = gql`
-  fragment postdata on Post {
+export const courseData = gql`
+  fragment courseData on Course {
     id
     uri
     template {
       templateName
     }
     title
+    date
     content
-    flexContent {
-      fieldGroupName
+    featuredImage {
+      node {
+        srcSet
+        sourceUrl
+        altText
+      }
     }
+
     author {
       node {
         name
@@ -109,6 +115,15 @@ export const getByUri = gql`
     }
   }
   ${pageData}
+`;
+
+export const getCourseByUri = gql`
+  query getPageByUri($uri: String!) {
+    nodeByUri(uri: $uri) {
+      ...courseData
+    }
+  }
+  ${courseData}
 `;
 
 // type is the page type such as Post or Page
@@ -176,6 +191,7 @@ export const getCourses = gql`
     courses(first: $first) {
       nodes {
         uri
+        id
         title
         author {
           node {

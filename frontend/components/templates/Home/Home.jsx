@@ -7,16 +7,11 @@ import Courses from "../../courses";
 export default function HomePage({ data: { nodeByUri: data = {} } = {} }) {
   const { error, data: { nodeByUri: { hero } = {} } = {} } =
     useQuery(getHomePage);
-  console.log(hero);
-  const { data: { courses: { nodes: courses } = {} } = {} } = useQuery(
-    getCourses,
-    { variables: { items: 10 } }
-  );
 
   return (
     <Page>
-      <Pagehero data={hero} />
-      <Courses data={courses} />
+      {hero && <Pagehero data={hero} />}
+      <Courses />
     </Page>
   );
 }
