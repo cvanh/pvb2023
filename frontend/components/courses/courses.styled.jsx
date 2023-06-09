@@ -1,3 +1,4 @@
+import screen from "../../theme";
 import styled from "styled-components";
 import theme from "../../theme";
 
@@ -5,11 +6,12 @@ export const SCourse = styled.div`
   display: inline-block;
   background-image: url(${(props) => props?.bgImage});
   height: 576px;
-  width: 433px;
+  width: 100%;
   position: relative;
   padding: 10px;
 
   @media ${screen.tablet} {
+    width: 433px;
   }
 
   .cardTitle {
